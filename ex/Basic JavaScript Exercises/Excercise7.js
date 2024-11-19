@@ -3,7 +3,7 @@
 function ageCategory(age) {
     if (age < 13 && age > 0) {
         return ('Child')
-    } else if (age <= 19 && age >= 13) {
+    } else if (age <= 19) {
         return ('Teen')
     } else if (age >= 20) {
         return ('Adult')

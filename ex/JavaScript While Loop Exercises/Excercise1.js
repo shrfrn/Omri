@@ -1,8 +1,9 @@
 'use strict'
 
 function countDigits(num){
-    num = Math.abs(num)
+    num = num < 0 ? -num : num
     if (num === 0) return 1
+    
     var numberOfDigits = 0
     while (num / 10 > 0){
         numberOfDigits++

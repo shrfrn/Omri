@@ -3,8 +3,9 @@
 function smallestDivisor(num){
     num = Math.abs(num)
     if (num <= 2) return num
+
     var div = 2
-    while (div < num) {
+    while (div < num / 2) {
         if (num % div === 0) return div
         div++
     }

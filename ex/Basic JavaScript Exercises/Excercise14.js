@@ -1,9 +1,7 @@
 'use strict'
 
 function sameLastDigit(num1, num2) {
-    if (num1 % 10 === num2 % 10) {
-        return true
-    } else return false
+    return num1 % 10 === num2 % 10
 }
 
 var number1 = 2020

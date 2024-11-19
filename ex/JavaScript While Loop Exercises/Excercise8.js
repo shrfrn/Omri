@@ -3,6 +3,7 @@
 function largestDigit(num) {
     var largest = num % 10
     num = Math.floor(num / 10)
+    
     while (num > 0) {
         if (num % 10 > largest) largest = num % 10
         num = Math.floor(num / 10)

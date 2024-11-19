@@ -1,10 +1,14 @@
 'use strict'
 
 function inRange(number, lower, upper) {
-    if (number <= upper && number >= lower) {
-        return true
-    } else return false
+    return number <= upper && number >= lower
 }
+
+// function inRange(number, lower, upper) {
+//     if (number <= upper && number >= lower) {
+//         return true
+//     } else return false
+// }
 
 var number1 = 0
 var number2 = 100

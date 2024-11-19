@@ -1,9 +1,9 @@
 'use strict'
 
 function sumDigits(num){
-    num = Math.abs(num)
     var res = 0
-    var stopLoop = num
+    var stopLoop = Math.abs(num)
+
     while (stopLoop > 0){
         res += stopLoop % 10
         stopLoop = Math.floor(stopLoop / 10)

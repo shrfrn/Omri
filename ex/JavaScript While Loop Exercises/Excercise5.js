@@ -2,17 +2,17 @@
 
 function gdc(a, b) {
     var smaller = Math.min(a, b)
-    var _gdc = 1
+    var gdc = 1
     var i = 1
 
     while (i <= smaller){
         if (a % i === 0 && b % i === 0) {
-            _gdc = i
+            gdc = i
         }
         i++
     }
   
-    return _gdc;
+    return gdc;
 }
 
 var number1 = 18

@@ -1,12 +1,21 @@
 'use strict'
 
 function minimumOfThree(a, b, c) {
-    if (a < b && a < c) {
-        return a
-    } else if (b < a && b < c) {
-        return b
-    } else return c
+    var smallest = c
+
+    if (a < smallest) smallest = a
+    if (b < smallest) smallest = b
+    
+    return smallest
 }
+
+// function minimumOfThree(a, b, c) {
+//     if (a < b && a < c) {
+//         return a
+//     } else if (b < a && b < c) {
+//         return b
+//     } else return c
+// }
 
 var number1 = 0
 var number2 = 100

@@ -1,10 +1,7 @@
 'use strict'
 
 function isLeapYear(year) {
-    if (year % 4 === 0 
-    &&  year % 100 !== 0) {
-        return true
-    } else return false
+    return year % 4 === 0 &&  year % 100 !== 0
 }
 var year1 = 2020
 var year2 = 2000

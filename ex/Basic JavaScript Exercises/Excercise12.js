@@ -1,9 +1,7 @@
 'use strict'
 
 function isDivisible(num, divisor) {
-    if (num % divisor === 0) {
-        return true
-    } else return false
+    return (num % divisor) === 0
 }
 var number1 = 12
 var number2 = 3

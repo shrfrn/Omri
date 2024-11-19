@@ -1,12 +1,12 @@
 'use strict'
 
+// function greaterNumber(a, b) {
+//     return a > b ? a : b
+// }
+
 function greaterNumber(a, b) {
-    if (a > b) {
-        return a
-    } else {
-        // returns b also when a == b
-        return b
-    }
+    if (a > b) return a
+    else return b
 }
 
 var num1 = 17
