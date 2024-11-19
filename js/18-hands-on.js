@@ -6,12 +6,14 @@
 
 
 var nums = [3, 2, 2, 0, 3]
+countInstances()
 
 function countInstances() {
     var counters = [0, 0, 0, 0]
 
     for(var i = 0; i < nums.length; i++){
-        counterIdx = nums[i]
+        var counterIdx = nums[i]
         counters[counterIdx]++
     }
+    console.log(counters)
 }
