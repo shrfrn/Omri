@@ -1,5 +1,3 @@
-'use strict'
-
 const movies = [
 	{
 		id: 1,
@@ -82,21 +80,3 @@ const movies = [
 		],
 	},
 ]
-
-/* 
-    Sort Movies by Top Salary 
-    Write a function sortMoviesByTopSalary(movies) which 
-    finds the top salary paid in every movie 
-    and sorts the movie array in descending order of top salaries.
-  */
-// var moviesB4 = movies
-function sortMoviesByTopSalary(movies) {
-	for (var i = 0; i < movies.length; i++) {
-		movies[i].actors.sort((a, b) => b.salary - a.salary)
-	}
-	return movies.sort((a, b) => a.actors[0].salary - b.actors[0].salary)
-}
-
-// console.log('movies B4 - ', moviesB4)
-console.log('--------------------------------')
-console.log('movies After - ', sortMoviesByTopSalary(movies))
