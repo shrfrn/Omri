@@ -7,7 +7,7 @@ const gPlayers = [
 	{ name: 'Mebahem', card: createCard(ROWS,COLS) },
 	{ name: 'Alberg', card: createCard(ROWS,COLS) },
 ]
-var gLots = initLots(SMALLEST_NUMBER, LARGEST_NUMBER)
+var gLots = initArrey(SMALLEST_NUMBER, LARGEST_NUMBER)
 const gIntrvalId = setInterval(startBingo, 300)
 
 function shuffle(array) {
@@ -27,7 +27,7 @@ function shuffle(array) {
     return array
 }
   
-function initLots(from, to){
+function initArrey(from, to){
     var lst = []
     for (var i=from; i<=to; i++){
         lst.push(i)
@@ -38,7 +38,7 @@ function initLots(from, to){
 function createCard(x,y) {
     var row = []
     var card = []
-    var numbers = initLots(SMALLEST_NUMBER, LARGEST_NUMBER)
+    var numbers = initArrey(SMALLEST_NUMBER, LARGEST_NUMBER)
     var cell = {
         value: null,       // The number in the cell
         isHit: false,   // true if that number has been called
